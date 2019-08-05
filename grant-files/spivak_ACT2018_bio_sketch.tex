@@ -1,0 +1,190 @@
+\documentclass[11pt,oneside,article]{memoir}
+
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{fixltx2e}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext}
+\usepackage[varg,bigdelims]{newpxmath}
+\usepackage[cal=euler,scr=rsfso]{mathalfa}
+\usepackage{bm}
+\usepackage{inputenc}
+\usepackage{microtype}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{todonotes}
+\usepackage{paralist}
+\usepackage[bookmarks=false,colorlinks=true, linkcolor=blue!40!black, urlcolor=blue!60!black, citecolor=red!50!black]{hyperref}
+\usepackage[color,all,poly,matrix,arrow]{xy}
+
+\linespread{1.1}
+
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\cod}{cod}
+\DeclareMathOperator{\dvert}{Vert}
+\DeclareMathOperator{\Lax}{Lax}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Mor}{Mor}
+\DeclareMathOperator{\Ob}{Ob}
+\DeclareMathOperator{\MOb}{\lvert\mspace{2mu}\cdot\mspace{2mu}\rvert}
+\DeclareMathOperator{\Tr}{Tr}
+\def\taking{\colon}
+
+\newcommand{\LMO}[1]{\overset{#1}{\bullet}}
+\newcommand{\LTO}[1]{\overset{\sf{#1}}{\bullet}}
+\newcommand{\LTOO}[1]{\stackrel{\sf{#1}}{\circ}}
+
+\renewcommand{\sf}{} %mathsf only works in math mode
+\renewcommand{\it}{\emph}
+\renewcommand{\bf}{\textbf}
+
+\newcommand{\inst}{\tn{-}\hspace{1pt}\mathsf{inst}}
+\newcommand{\RR}{\mathbb{R}}
+
+\def\bhline{\Xhline{2\arrayrulewidth}}
+\def\bbhline{\Xhline{2.5\arrayrulewidth}}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem*{theorem*}{Theorem}
+
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{warning}[theorem]{Warning}
+
+\newcommand{\longnote}[2][4.9in]{\fcolorbox{black}{yellow}{\parbox{#1}{\color{black} #2}}}
+\newcommand{\shortnote}[1]{\fcolorbox{black}{yellow}{\color{black} #1}}
+
+\newcommand{\tn}[1]{\textnormal{#1}}
+
+\newcommand{\Set}{\mathsf{Set}}
+
+\newcommand{\To}[1]{\xrightarrow{#1}}
+\newcommand{\too}{\longrightarrow}
+\newcommand{\Too}[1]{\To{\ \ #1\ \ }}
+\newcommand{\from}{\leftarrow}
+\newcommand{\From}[1]{\xleftarrow{#1}}
+
+
+\settrims{0pt}{0pt} % page and stock same size
+%\setlxvchars %calculate line length such that there are about 65 characters per line in \normalfont
+\settypeblocksize{*}{36.5pc}{*} % {height}{width}{ratio}
+%\settypeblocksize{*}{39pc}{*} % {height}{width}{ratio}
+\setlrmargins{*}{*}{1} % {spine}{edge}{ratio}
+%\setulmargins{*}{*}{1} % {upper}{lower}{ratio}, hight of typeblock fixed
+\setulmarginsandblock{1in}{1in}{*} % height of typeblock computed
+\setheadfoot{\onelineskip}{2\onelineskip} % {headheight}{footskip}
+\setheaderspaces{*}{1.5\onelineskip}{*} % {headdrop}{headsep}{ratio}
+\checkandfixthelayout
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
+\pagestyle{companion}
+\renewcommand*{\parttitlefont}{\bfseries\LARGE}
+\renewcommand*{\chaptitlefont}{\bfseries\Large}
+\setsecheadstyle{\bfseries\large\raggedright}
+\setsubsecheadstyle{\bfseries\raggedright}
+
+\begin{document}
+
+\chapter*[Biographical Sketch]{}
+
+\begin{center}\Large David I. Spivak\end{center}
+
+
+\subsection{Professional Preparation}
+University of Maryland, College Park: \ \ BS, Mathematics, 1996\\
+University of California, Berkeley: \ \ PhD, Mathematics, 2007\\
+
+\subsection{Appointments}
+2013 -- Present: Research Scientist, Massachusetts Institute of Technology\\
+2010 -- 2013: Postdoctoral Associate, Massachusetts Institute of Technology\\
+2007 -- 2010: Visiting Assistant Professor, University of Oregon\\
+
+\subsection{Five Related Products}
+\begin{compactitem}
+  \item \textbf{Spivak, D.I.} (2012) "Functorial Data Migration''.  \emph{Information and Communication}. Vol 217, 31 -- 51. 
+  \item \textbf{Spivak, D.I.} (2014) \emph{Category Theory for the Sciences}. Cambridge: MIT Press. 486 pages. 
+  \item Giesa, T.; Jagadeesan, R.; \textbf{Spivak, D.I.}; Buehler, M.J. (2015) ``Matriarch: a Python library for materials architecture.'' \emph{ACS Biomaterials Science \& Engineering}, %\url{http://pubs.acs.org/doi/full/10.1021/acsbiomaterials.5b00251}.
+  \item \textbf{Spivak, D.I.}; Tan, J.Z. (2016) ``Nesting of dynamic systems and mode-dependent networks.'' \emph{Journal of Complex Networks.} %doi: 10.1093/comnet/cnw022.
+  \item Wisnesky, R.; Breiner, S.; Jones, A.; \textbf{Spivak, D.I.}; Subrahmanian, E. (2017) ``Using category theory to facilitate multiple manufacturing service database integration.'' ASME. Journal of Computing and Information Science in Engineering 17(2), 021011.
+\end{compactitem}
+
+\subsection{Five Other Significant Products}
+\begin{compactitem}
+  \item Giesa, T.; \textbf{Spivak, D.I.}; Buehler, M.J. (2012) "Category theory based solution for the building block replacement problem in materials design''. \emph{Advanced Engineering Materials}. DOI: 10.1002/adem.201200109
+  \item \textbf{Spivak, D.I.}; Kent, R.E. (2012) "Ologs: a categorical framework for knowledge representation''.  \emph{PLoS ONE} 7(1): e24274. doi:10.1371/journal.pone.0024274.
+  \item Gross, J.; Chlipala, A.; \textbf{Spivak, D.I.} (2014) "Experience Implementing a Performant Category-Theory Library in Coq''. \emph{5th conference on interactive theorem proving (ITP'14)}.
+  \item Vagner, D.; \textbf{Spivak, D.I.}; Lerman, E. (2015) ``Algebras of open dynamical systems on the operad of wiring diagrams.'' \emph{Theory and Application of Categories} Vol.\ 30, No.\ 51, 1793--1822. 
+  \item \textbf{Spivak, D.I.} (2017) ``Categories as mathematical models.'' To appear in \emph{Categories for the Working Philosopher}. Oxford University Press.
+\end{compactitem}
+
+\subsection{Five Synergistic Activities}
+\begin{compactitem}
+\item I taught "Category theory for scientists" in Spring 2013 at MIT, a first-of-its-kind course on applied category theory. The 18 students were from math, materials science, computer science, neuroscience, and other fields. The course textbook \emph{Category Theory for the Sciences}, published by MIT Press, has led to interest from people of a wide variety of backgrounds, both geographically and in terms of mathematical sophistication.
+\item I hired and worked with Ryan Wisnesky to create a software tool, \href{http://categoricaldata.net/fql.html}{FQL}, which can be used to teach category theory, including left and right Kan extensions as "data migration functors". A company, \emph{Categorical Informatics Inc.}---partially supported by NSF I-Corps---has now been spun out of MIT to commercialize this product.
+\item I have hired researchers from a variety of background as postdocs. Out of six postdocs hired to date, one is a woman, one is latino, and another is half latino. 
+\item Since 2010, I have mentored 21 undergraduate students of all backgrounds on research projects in applied category theory, for a total of 29 semesters (some students working with me more than once). Several of these projects resulted in published papers. I have also volunteered to tech two reading courses on category theory.
+\item I co-organized the first Computational Category Theory conference at NIST in 2015 and the "Workshop on topology and abstract algebra for biomedicine" at the Pacific Symposium on Biocomputing (PSB) 2016, and the STRING 2017 conference in Oxford.
+\end{compactitem}
+
+\end{document}
+
+\section*{Collaborations and other affiliations}
+
+\subsection{Collaborators and Co-Editors (20)}
+
+Spencer Breiner (NIST),
+Markus Buehler (MIT), 
+Andrea Censi (ETH),  
+Adam Chlipala (MIT),
+Subrahmanian Eswaran (CMU),
+Brendan Fong (MIT),   
+Henrik Forssell (University of Oslo),
+Tristan Giesa (MIT), 
+Jason Gross (MIT),
+Hakon R. Gylterud (Stockholm University),
+Al Jones (NIST),
+Eugene Lerman (UIUC),
+Marco P\'erez (University of Mexico),
+Dylan Rupel (Notre Dame),
+Patrick Schultz (MIT),
+Joshua Tan (Oxford),      
+Michael Triantafyllou (MIT), 
+R\'{e}my Tuy\'{e}ras (MIT), 
+Dmitry Vagner (Duke),
+Ryan Wisnesky (Categorical Informatics Inc).
+
+\subsection{Graduate Advisors and Postdoctoral Sponsors (4)}
+Tom Graber (Cal Tech), Jacob Lurie (Harvard), Daniel Dugger (University of Oregon), Haynes Miller (MIT).
+
+\subsection{Thesis Advisor (1)} 
+Peter Teichner (University of California, Berkeley).
+
+
+
+\end{document}
+
+\begin{center}\Large David I. Spivak\end{center}
+\noindent
+Department of Mathematics\\
+Massachusetts Institute of Technology\\
+77 Massachusetts Avenue\\
+Building 2, Room 180\\
+Cambridge, MA 02139\\
+dspivak@mit.edu\\

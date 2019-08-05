@@ -1,0 +1,334 @@
+\documentclass[12pt]{amsart}
+
+%\sloppy
+
+%\addtolength{\topmargin}{-70pt}
+%\addtolength{\textwidth}{60pt}
+%\addtolength{\textheight}{120pt}
+%\addtolength{\oddsidemargin}{-32pt}
+%\evensidemargin\oddsidemargin
+
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+%PACKAGES
+%\usepackage{geometry}               
+%\geometry{letterpaper}                   
+%\usepackage{graphicx}
+%\usepackage{amssymb,amsfonts}
+%\usepackage[all]{xy}
+%\usepackage{tikz}
+%\usetikzlibrary{arrows}
+%\usepackage[mathscr]{eucal}
+
+%\usepackage{rotating}
+%\usepackage{enumerate}
+%\usepackage{dsfont}
+%\usepackage{mathtools}
+%\usepackage{amsmath}
+\usepackage{Trees}
+
+%URL colors
+%\usepackage{color}
+%\definecolor{myurlcolor}{rgb}{0.6,0,0}
+%\definecolor{mycitecolor}{rgb}{0,0,0.8}
+%\definecolor{myrefcolor}{rgb}{0,0,0.8}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks,
+%linkcolor=myrefcolor,
+%citecolor=mycitecolor,
+%urlcolor=myurlcolor}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{example}[thm]{Example}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{sch}[thm]{Scholium}
+\newcommand{\ctr}[1]{\begin{center} #1 \end{center}}
+\newcommand{\oo}{\infty}
+\newcommand{\al}[1]{\begin{align} #1 \end{align}}
+\newcommand{\alx}[1]{\begin{align*} #1 \end{align*}}
+\renewcommand{\AA}{\mathbf{A}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CM}{\mathrm{CM}}
+\newcommand{\gen}{\mathrm{gen}}
+\newcommand{\maps}{\colon}
+\newcommand{\tensor}{\otimes}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand {\tuple}[1]{\langle #1 \rangle}
+\newcommand{\define}[1]{{\bf \boldmath{#1}}}
+
+\begin{document}
+
+\ctr{\large PROJECT DESCRIPTION}
+\title{Applied Category Theory 2018}
+\author{John C.\ Baez}
+
+\maketitle
+
+\section{Structure of the Conference}
+
+The Lorentz Center in Leiden, the Netherlands, has agreed to host and fund
+\textbf{Applied Category Theory 2018} from April 23rd to May 4th, 2018.
+With funding from the NSF, 8 grad students, one postdoc, and two
+senior researchers in the US would be able to attend this school and workshop and participate 
+in the 4-month training program leading up to these events.
+
+The school and workshop will bring together
+approximately 30 senior researchers across diverse areas of mathematics,
+20 junior researchers, and 10 participants from industry, with the aim
+of sharing recent progress in applied category theory, creating community, and
+laying out a roadmap for future research.
+
+The event will have three distinct parts:
+
+\begin{enumerate}
+\item 
+From January to April 2018 there will be an online reading seminar following the model of the successful Kan Extension Seminar, as discussed in \textsl{Notices of the AMS} \cite{Kan}.
+There will be 16 students and 2 facilitators.  The seminar will consist of 8 two-week blocks, 
+each with one paper on applications of category theory as assigned reading, and with 
+two students as leaders. Each block will have three phases: 
+
+\begin{itemize}
+\item a discussion of the assigned paper using an online videoconference system, consisting of a presentation by the leaders followed by questions,
+\item
+responses on a private forum from the other participants, moderated by the facilitators,
+\item 
+publication of an article summarizing the assigned paper on the well-known mathematics blog
+\textsl{The $n$-Category Caf\'e}.
+\end{itemize}
+
+\vskip 1em
+\item From April 23rd to 26th they will attend a research school at the Lorentz Center attended by 16 students, 2 facilitators, 4 mentors and a guest lecturer.   After opening lectures by the mentors, this will be devoted to collaborative research.  Each mentor will work with the four students who led the online discussions on the two papers they assigned.  They will try to prove conjectures outlined by the mentors at the beginning of the seminar. The results will be written up for publication.   Lectures will be videotaped and placed on the \textsl{Oxford Quantum Video} website as well as the conference website.
+
+\vskip 1em
+
+\item From April 30th to May 4th there will be a workshop with 60 participants, also at the Lorentz Center.  The four themes will be causality, cognitive science and AI, dynamical
+systems and networks, and systems biology.
+This focus will be on structured discussion, though there will also be three hours of invited 
+talks per day.   Office space will be provided.
+\end{enumerate}
+
+
+\section{Personnel Involved}
+
+The organizing committee of \textsl{Applied Category Theory 2018} 
+consists of Bob Coecke (Oxford), Brendan Fong (MIT),
+Aleks Kissinger (Radboud), Martha Lewis (Amsterdam), and Joshua Tan (Oxford).
+The Lorentz Center has dedicated staff managing the administrative side of
+the conference, led by Tara Seeger.
+
+The online reading seminar from January to April will be facilitated by Nina Otter and Brendan Fong.  The four mentors, who will also give lectures at the school
+from April 23rd to 26th, are:
+
+\begin{itemize}
+\item 
+John Baez (UCR) --- open Markov processes and chemical reaction networks
+\item 
+Martha Lewis (Amsterdam) --- compositional approaches to linguistics and cognition
+\item
+Aleks Kissinger (Radboud) --- the logic of causality
+\item 
+Pawel Sobocinski (Southampton) --- modeling open and interconnected systems
+\end{itemize}
+In addition J\"urgen Jost (MPI) will give a guest lecture on the challenges posed to mathematics by the modern data-driven world.
+
+For the workshop from April 30th to May 4th, the following plenary speakers, including the PI and the one senior personnel, have been invited.   Confirmed speakers are marked with an asterisk:
+
+\begin{itemize}
+\item Samson Abramsky (Oxford)* --- sheaves and the logic of contextuality
+\item Aaron Ames (Caltech) --- categories in hybrid dynamical systems and robotics
+\item John Baez (UCR)* --- categories in networked dynamical systems
+\item Mikhail Gromov (NYU, IHES) --- category theory in biology
+\item Helle Hvid Hansen (TU Delft) --- categorical approaches to Markov decision processes and stochastic games
+\item Kathryn Hess (EPFL)* --- topological data analysis
+\item Bart Jacobs (Radboud)* --- causality via categorical logic
+\item Tom Leinster (Edinburgh)* --- categorical approach to entropy, biodiversity, etc.
+\item Gordon Plotkin (Edinburgh)* --- category theory in systems biology
+\item Jurriaan Rot (Radboud) --- coalgebra and causality
+\item Mehrnoosh Sadrzadeh (Queen Mary's University London)* --- categorical linguistics
+\item Nicoletta Sabadini (Insubria) --- category theoretic modeling of information systems.
+\end{itemize}
+
+\section{Intellectual Merit}
+
+Category theory was originally developed in the 1940s to transfer problems and techniques between different fields of pure mathematics, e.g.\ algebra and topology.  Starting in the 1970s it became important in the semantics of computer programming languages.    In the 1990s, thanks in large
+part to the work of Atiyah, Jones and Witten, it was applied to branches of physics such as topological quantum field theory and string theory.  
+
+Starting in the 2000s, applications of category theory spread to quantum computation \cite{abramsky09,selinger}, which actually has connections to topological quantum
+field theory \cite{freedman}.    Here we might someday see novel technology designed with the
+help of categories.  However, \textsl{Applied Category Theory 2018} focuses on applications  of category theory to a wide range of more down-to-earth disciplines, including:
+\begin{itemize}
+\item control theory \cite{arbib05,erbele,bonchi}
+\item the design of analog and digital circuits \cite{baez15,ghica}
+\item the study of stochastic processes \cite{albasini,baezfongpollard}
+\item the study of networked dynamical systems \cite{spivak16,vagner} 
+\item the design of databases \cite{spivak17,spivak14,spivak15}
+\item biochemistry \cite{baezpollard,plotkin}
+\item the mathematics of biodiversity \cite{cobbold,leinster}
+\item the semantics of natural language \cite{sadrzadeh}. 
+\end{itemize}
+Most of their authors of the papers cited in this list will participate in \textsl{Applied Category Theory 2018}.  
+
+A category consists of a collection of objects together with a collection of maps between those objects, satisfying certain rules.  Mathematicians use maps between categories to turn problems in one subject  into easier problems in another subject \cite{riehl}.  In computer science, maps between categories are used to connect syntax and semantics: thus, they clarify the relation between programs and what programs actually do \cite{crole,pierce}.  In quantum physics, maps between categories connect abstract theories and their concrete implementations in terms of operators between Hilbert spaces.
+
+The applied category theory community is extending this paradigm to other fields of science and engineering \cite{spivak14}.  This allows developments in one such field to be transferred to another field \emph{through} category theory.  The papers cited in the above list give examples of how this is done.  Since most of their authors will attend \textsl{Applied Category Theory 2018}, this workshop is an excellent opportunity to instigate a multi-disciplinary research program in which concepts, structures, and methods from one discipline can be reused in another. Tangibly and in the short term, it will bring together people from different disciplines in order to write survey papers that ground the varied research in applied category theory and lays out some options for future research.
+
+\section{Broader Impacts}
+ 
+Currently, category theory informs work at a number of US companies including:
+
+\begin{itemize} 
+\item Metron Scientific Solutions --- the PI is using operads in their project with DARPA to build a Complex Adaptive System Composition and Design Environment.
+\item Categorical Informatics --- the one member of senior personnel is a cofounder of this company, which uses category theory to design databases.
+\item Siemens --- Blake Pollard, a student of the PI, is working with Arquimedes Canedo on the project Next-Generation Engineering with Category Theory and Sheaves.
+\end{itemize}   
+
+However, the potential of this subject in industry has just begun to be exploited.  This workshop will address this problem.  It will teach junior researchers in mathematics how to apply category theory, expose participants from industry to the uses of this subject, and forge new contacts between mathematicians and industry.  Members of underrepresented groups are encouraged to participate,
+and a relatively large fraction of the mentors, speakers and participants listed above are from these groups.
+
+\section{How This Conference Differs}
+
+Similar recent events include:
+
+\begin{itemize}
+\item Special session on Applied Category Theory, Fall Western Sectional Meeting of the AMS, U.C. Riverside, November 2017.  Organized by John C.\ Baez.
+\item  1st Workshop on String Diagrams in Computation, Logic, and Physics, University of Oxford, September 2017.  Organized by Aleks Kissinger, Pawel Sobocinski, David Spivak \textit{et al}.
+\item Categorical Foundations of Network Theory, Institute of Scientific Interchange, Turin, Italy, 2015.  Organized by John C.\ Baez and Jacob Biamonte.
+\item 
+NIST Workshop on Computational Category Theory, NIST, Gaithersburg, Maryland, September 2015.
+Organized by Spencer Breiner.
+\item 
+Categorical Methods at the Crossroads, Dagstuhl, Germany, 2014.   Organized by Samson Abramsky, John C.\ Baez, Fabio Gadducci and Victor Winschel.
+\end{itemize}
+
+This conference is considerably larger (60 participants), with a focus on younger members of the community (20 participants).   It focuses on a new range of applications of category theory not treated in any previous conference.  Most importantly, it includes a large training component: 16 graduate students will engage in a 4-month online research seminar and a 4-day in-person school before the conference.  Another unusual feature is the blend of participants from academia and
+industry.
+
+\section{Prior NSF Support}
+
+The first PI has won two prior NSF grants.  The most recent and relevant is award number 0653646, entitled `Feynman Diagrams and the Semantics of Quantum Computation', a grant for \$149,938.00 awarded in July 2007 and ending July 2012.   
+
+\subsection{Summary of results, including broader impacts}
+
+In 'Physics, Topology, Logic and Computation: A Rosetta Stone', the PI and his graduate student Mike Stay, supported by this grant, worked out and carefully explained how Feynman diagrams, string diagrams in topology, proofs in logic, and processes of computation could all be dealt with in a unified way using symmetric monoidal categories with duals. Stay, who now works at Google, is now becoming an expert on categorical semantics and its applications to computer science. He is running a category theory mailing list at Google and is completing his Ph.D. thesis, which describes a theory of compact closed bicategories with duals in which computations are 2-morphisms.  
+
+After Mike Stay took a job at Google, most of the grant money went to supporting another graduate student of the PI, Alexander Hoffnung.  Together with Hoffnung and another graduate student, Christopher Walker, the PI found that spans of groupoids are able to do much of what we normally do with linear operators in quantum theory. This was a rather unexpected turn.  It turned out one can use this to `groupoidify' a large portion of the mathematics of quantum theory, shedding light on its combinatorial underpinnings.   Alexander Hoffnung has gone on to postdoctoral positions first at the University of Ottawa and now Temple University, and is carrying on this line of work.  Christopher Walker has a tenure-track position at Odessa College.
+
+In further work with his graduate students Christopher Rogers and John Huerta, the PI also studied the algebra of grand unified theories and applications of higher category theory to string theory.  Thiese students have completed Ph.D.'s on closely related topics.  Christopher Rogers has held postdoctoral positions first at the University of G\"ottingen,and now the University of Greifswald, while John Huerta obtained postdocs first at Australian National University and now the Instituto Superior T\'ecnico in Lisbon.  Both are actively publishing more work along similar lines.
+
+The PI gave several talks on the subject of the `Rosetta Stone' paper. For example, he gave a one-hour plenary talk about it in `Algebraic Topological Methods in Computer Science 2008' at University Paris 7 on July 7, 2008. The PI also gave a one-hour plenary talk at the `24th Annual IEEE Symposium on Logic in Computer Science' (LICS 2009) on August 13, 2009, and a colloquium talk at California State University, Fresno on April 9, 2010. 
+
+The PI also gave talks on groupoidification. He spoke on this in October 2007 as the keynote speaker at `Deep Beauty: Mathematical Innovation and the Search for an Underlying Intelligibility of the Quantum World', a workshop in honor of John von Neumann at Princeton University.The PI also spoke about it at the `Groupoids in Analysis and Geometry' seminar in Berkeley on Tuesday May 20, 2008, at the conference `Homotopy Theory and Higher Categories' at the Centre de Recerca Matem\`atica (CRM) in Barcelona on June 30, and at the 2009 Joint Mathematics Meetings, Washington, D.C. in January 2009.  The PI's students have also given many talks on the subjects of this research project.
+
+\subsection{Publications}
+
+The publications arising from grant number  0653646 were:
+
+\begin{enumerate}
+
+\item J.\ Baez and A.\ Lauda, A prehistory of $n$-categorical physics, in {\sl Deep Beauty: Mathematical Innovation and the Search  for an Underlying Intelligibility of the Quantum World}, ed.\ Hans Halvorson, Cambridge U.\ Press, Cambridge, pp.\ 13--128.
+
+\item J.\ Baez, A.\ Hoffnung and C.\ Rogers, Categorified symplectic geometry and the classical string, \textsl{Comm.\ Math.\ Phys.\  } {\bf 293} (2010), 701--715. 
+
+\item J.\ Baez and C.\ Rogers, Categorified symplectic geometry and the string Lie 2-algebra,  {\sl Homotopy, Homology
+and Applications} {\bf 12} (2010), 221--236.
+
+\item J.\ Baez, A.\ Hoffnung and C.\ Walker,  Higher-dimensional algebra VII: groupoidification, {\sl Th.\ Appl.\ Cat.\ }{\bf 24} 
+(2010), 489--553.
+
+\item J.\ Baez and J.\ Huerta, The algebra of grand unified theories, \textsl{ Bull.\ Amer.\ Math.\ Soc.\ }{\bf 
+47} (2010), 483--552.
+
+\item J.\ Baez and M.\ Stay, Physics, topology, logic and computation: a Rosetta Stone, in {\sl New Structures for Physics}, ed.\ B.\ Coecke, Lecture Notes in Physics vol.\ 813, Springer, Berlin, 2011, pp.\ 95--174.
+
+\end{enumerate}
+
+
+
+\vfill
+
+\pagebreak
+\pagestyle{empty}
+
+\begin{thebibliography}{10}
+
+\bibitem{abramsky09} S.\ Abramsky and B.\ Coecke, A categorical semantics of quantum protocols, in \textsl{Handbook of Quantum Logic and Quantum Structures}, Elsevier, Amsterdam, 2009.  %Also available at \href{https://arxiv.org/abs/quant-ph/0402130}{arXiv:quant-ph/0402130}.
+
+\bibitem{dagstuhl14} S.\ Abramsky, J.\ C.\ Baez, F.\ Gadducci and V.\ Winschel, \textsl{Categorical Methods at the Crossroads}, Report from Dagstuhl Perspectives Workshop \textbf{14182}, 2014.  %Available at \href{http://drops.dagstuhl.de/opus/volltexte/2014/4618/}{http://drops.dagstuhl.de/opus/volltexte/2014/4618/}.
+
+\bibitem{albasini} L.\ de Francesco Albasini, N.\ Sabadini and Robert F.\ C.\ Walters, The compositional construction of Markov processes, \textsl{Appl.\ Cat.\ Str.\ }{\bf 19} (2011), 425--437.
+%Also available as \href{http://arxiv.org/abs/0901.2434}{arXiv:0901.2434}.
+
+\bibitem{arbib05} M.\ A.\ Arbib and E.\ G.\ Manes. A categorist’s view of automata and systems, in \textsl{Category Theory Applied to Computation and Control}, E.\ G.\ Manes (ed.), Springer, Berlin, 2005.
+
+\bibitem{baez15}  J.\ C.\ Baez and B.\ Fong. A compositional framework for passive linear networks.  %Available at \href{https://arxiv.org/abs/1504.05625}{arXiv:1504.05625}.
+
+\bibitem{baezfongpollard}  J.\ C.\ Baez, B.\ Fong and B.\ Pollard, \textsl{A compositional framework for Markov processes}, \textsl{Jour\. Math.\ Phys.} \textbf{57} (2016), 033301. %Also available as \href{https://arxiv.org/abs/1508.06448}{arXiv:1508.06448}.
+
+\bibitem{leinster11}  J.\ C.\ Baez, T.\ Fritz and T.\ Leinster, A characterization of entropy in terms of information loss, \textsl{Entropy} \textbf{13} (2011), 1945--1957.  %Also available as \href{https://arxiv.org/abs/1106.1791}{arXiv:1106.179}.
+
+\bibitem{baezpollard} J.\ C.\ Baez and B.\ Pollard, A compositional framework for reaction networks, 
+\textsl{Rev.\ Math.\ Phys.} \textbf{29}, 1750028.  %Also available as \href{https://arxiv.org/abs/1704.02051}{arXiv:1704.02051}.
+
+\bibitem{baez11}  J.\ C.\ Baez and M.\ Stay, Physics, topology, logic and computation: a Rosetta Stone, in \textsl{New Structures for Physics}, ed.\ Bob Coecke, Springer, Berlin, 2011.  %\href{https://arxiv.org/abs/0903.0340}{arXiv:0903.0340}.
+
+\bibitem{erbele} J.\ C.\ Baez and J.\ Erbele, Categories in control,  \textsl{Th.\ Appl.\ Cat.\ }\textbf{30} (2015), 836--881.   %Also available as
+%\href{http://arxiv.org/abs/1405.6881}{arXiv:1405.6881}.
+
+\bibitem{bonchi} F.\ Bonchi, P.\ Soboci\'nski and F.\ Zanasi, A categorical semantics of signal flow graphs, in \textsl{CONCUR 2014--Concurrency Theory}, eds.\ P.\ Baldan and D.\ Gorla, \textsl{Lecture Notes in Computer Science} vol.\ 8704, Springer, Berlin, 2014, pp.\ 435--450.  %Also available at \href{https://pdfs.semanticscholar.org/c908/47f1d138c9b44aaed72bcd59c9ec1915d395.pdf}{https://pdfs.semanticscholar.org/c908/47f1d138c9b44aaed72bcd59c9ec1915d395.pdf}.
+
+\bibitem{spivak17} S.\ Breiner, A.\ Jones, D.\ Spivak, E.\ Subrahmanian and R.\ Wisnesky, Using category theory to facilitate multiple manufacturing service database integration, \textsl{ASME Journal of Computing and Information Science in Engineering} \textbf{17} (2017), 021011.  %Available at \href{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429}{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?}\break \href{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429}{articleid=2539429}.
+
+\bibitem{cobbold} C.\ Cobbold and T.\ Leinster, Measuring diversity: the importance of species similarity, \textsl{Ecology} \textbf{93} (2012), 477--489.  %Also available at \href{http://www.maths.ed.ac.uk/~tl/mdiss.pdf}{http://www.maths.ed.ac.uk/$\sim$tl/mdiss.pdf}
+
+\bibitem{crole} R.\ Crole, \textsl{Categories for Types}, Cambridge U.\ Press, Cambridge, 1994.
+
+\bibitem{freedman} M.\ Freedman, A.\ Kitaev, M.\ Larsen and Z.\ Wang, Topological quantum computation, \textsl{Bulletin of the AMS} \textbf{2003} \textbf{40}, 31–38.  %Also available at \href{https://arxiv.org/abs/quant-ph/0101025}{arXiv:quant-ph/0101025}.
+
+\bibitem{ghica}  D.\ R.\ Ghica and A.\ Jung, Categorical semantics of digital circuits, in \textsl{Proceedings of the 16th Conference on Formal Methods in Computer-Aided Design}, 
+R.\ Piskac and M.\ Talupur (eds.), Springer, Berlin, 2016.  %Also available at \href{https://www.cs.bham.ac.uk/~drg/papers/fmcad16.pdf}{https://www.cs.bham.ac.uk/$\sim$drg/papers/fmcad16.pdf}.
+
+\bibitem{sadrzadeh}  D.\ Kartsaklis, M.\ Sadrzadeh, S.\ Pulman and B.\ Coecke, Reasoning about meaning in natural language with compact closed categories and Frobenius algebras, in \textsl{Logic and Algebraic Structures in Quantum Computing and Information}, Cambridge U.\ Press, Cambridge, 2013.   %Also available as \href{https://arxiv.org/abs/1401.5980}{arXiv:1401.5980}.
+
+\bibitem{leinster} T.\ Leinster, The magnitude of metric spaces, \textsl{Doc.\ Mathematica} \textbf{18} (2013), 857--905.  % Also available as \href{https://arxiv.org/abs/1012.5857}{arXiv:1012.5857}.
+
+\bibitem{grefenstette} E.\ Grefenstette and M.\ Sadrzadeh, Experimental support for a categorical compositional distributional model of meaning, \textsl{Proceedings of the Conference on Empirical Methods in Natural Language Processing}, Association for Computational Linguistics, 2011, 1394--1404.   %Also available as \href{https://arxiv.org/abs/1106.4058}{arXiv:1106.4058}.
+
+\bibitem{pierce} B.\ C.\ Pierce, \textsl{Basic Category Theory for Computer Scientists}, MIT Press, Cambridge Massachusetts, 1991.
+
+%\bibitem{moggi}  E.\ Moggi, Notions of computation and monads, \textsl{Information and Computation} \textbf{93} (1991), 55--92.
+
+\bibitem{plotkin} G.\ Plotkin, A calculus of chemical systems, in \textsl{In Search of Elegance in the Theory and Practice of Computation: Essays Dedicated to Peter Buneman} eds.\ V.\ Tannen, 
+\textit{et al}, Springer, Berlin, 2013, pp.\ 445--465.  %Also available at \href{http://homepages.inf.ed.ac.uk/gdp/publications/CCS.pdf}{http://homepages.inf.ed.ac.uk/gdp/publications/CCS.pdf}.
+
+\bibitem{Kan} E.\ Riehl, The Kan Extension Seminar: an experimental online graduate reading course, \textsl{AMS Notices} \textbf{61} (2014), 1357--1358.  %Also available at \href{http://www.ams.org/notices/201411/rnoti-p1357.pdf}{http://www.ams.org/notices/201411/rnoti-p1357.pdf}.
+
+\bibitem{riehl} E.\ Riehl, \textsl{Categories in Context},  Dover, New York, 2016.  %Also available at \href{http://www.math.jhu.edu/~eriehl/context.pdf}{http://www.math.jhu.edu/~eriehl/context.pdf}.
+
+\bibitem{selinger} P.\ Selinger and B.\ Valiron, Quantum lambda calculus, 
+in Simon Gay and Ian Mackie, eds., \textsl{Semantic Techniques in Quantum Computation}, Cambridge U.\ Press, Cambridge, 2009, pp.\ 135--172.  %Also available at \href{https://arxiv.org/abs/quant-ph/0307150}{arXiv:quant-ph/0307150}.
+
+\bibitem{spivak12a} D.\ I.\ Spivak, Functorial data migration, \textsl{Information and Communication} \textbf{217} (2012), 31--51.   %Also available as \href{https://arxiv.org/abs/1009.1166}{arXiv:1009.1166}.
+
+\bibitem{spivak12b}  D.\ I.\ Spivak and R.\ E.\ Kent, Ologs: a categorical framework for knowledge representation, \textsl{PLoS ONE} (2012), e24274.    %Also available as 
+%\href{https://arxiv.org/abs/1102.1889}{arXiv:1102.1889}.
+
+\bibitem{spivak14}  D.\ I.\ Spivak, \textsl{Category Theory for Scientists}, MIT Press, Cambridge Massachusetts, 2014.
+
+\bibitem{spivak16} D.\ I.\ Spivak, C.\ Vasilakopoulou and P.\ Schultz, Dynamical systems and sheaves.  %Available at \href{https://arxiv.org/abs/1609.08086}{arXiv:1609.08086}.
+
+\bibitem{vagner} D.\ Vagner, D.\ I.\ Spivak and E.\ Lerman, Algebras of open dynamical systems on the operad of wiring diagrams, \textsl{Th.\ Appl.\ Cat.} \textbf{30} (2015), 1793--1822.   %Also available at \href{https://arxiv.org/abs/1408.1598}{arXiv:1408.1598}.
+
+\bibitem{spivak15}  R.\ Wisnesky, D.\ I.\ Spivak, P.\ Schultz and E.\ Subrahmanian, Functorial data migration: from theory to practice.  %Also available as \href{https://arxiv.org/abs/1502.05947}{arXiv:1502.05947}.
+
+\end{thebibliography}
+\end{document}
+
+
